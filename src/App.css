@@ -19,9 +19,9 @@
     background-color: #fff;
     border-radius: 8px;
     border: solid 3px #038373;
-    min-width: 50%;
     overflow: hidden;
     display: flex;
+    min-width: 50%;
 }
 
 select,
@@ -37,6 +37,7 @@ button {
 
 .search-bar input {
     flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .search-bar button {
@@ -55,7 +56,7 @@ button {
     align-items: center;
     border-radius: 8px;
     border: solid 3px #038373;
-    padding: 1rem;
+    padding: 0.5rem 0.8rem;
 }
 
 .courier-item-info {
@@ -104,5 +105,10 @@ button {
 
     .search {
         height: 30vh;
+        padding: 0 1rem;
+    }
+
+    .search-bar {
+        min-width: 0;
     }
 }
