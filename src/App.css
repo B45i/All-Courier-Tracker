@@ -35,6 +35,11 @@ button {
     color: #038373;
 }
 
+button:disabled {
+    color: #ff605c;
+    cursor: not-allowed !important;
+}
+
 .search-bar input {
     flex-grow: 1;
     flex-shrink: 1;
