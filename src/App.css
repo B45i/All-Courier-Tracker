@@ -4,7 +4,7 @@
 
 .search {
     color: #fff;
-    height: 40vh;
+    height: 25vh;
     background-color: #00cc8e;
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ button {
     }
 
     .search {
-        height: 30vh;
+        height: 31vh;
         padding: 0 1rem;
     }
 
