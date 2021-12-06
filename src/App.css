@@ -2,6 +2,10 @@
     margin-top: 1rem;
 }
 
+.title-case {
+    text-transform: capitalize;
+}
+
 .search {
     color: #fff;
     height: 25vh;
@@ -49,8 +53,6 @@ button:disabled {
     cursor: pointer;
 }
 
-/* ---- */
-
 .courier-items {
     margin: 1rem 1.5rem;
 }
@@ -62,6 +64,7 @@ button:disabled {
     border-radius: 8px;
     border: solid 3px #038373;
     padding: 0.5rem 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 .courier-item-info {
@@ -89,6 +92,10 @@ button:disabled {
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
+}
+
+.courier-detail-location {
+    flex-basis: 20%;
 }
 
 .courier-item-status::before {

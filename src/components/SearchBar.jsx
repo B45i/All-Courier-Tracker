@@ -2,14 +2,16 @@ import { useState } from 'react';
 import { useLocation } from 'wouter';
 
 const courierProviders = [
-    'EKart',
-    'ECom',
-    'Delhivery',
-    'XpressBees',
     'Bluedart',
+    'DHL',
     'DTDC',
+    'Delhivery',
+    'ECom',
+    'EKart',
     'Gati',
-    'ShadowFax',
+    'Maruti',
+    'Shadowfax',
+    'XpressBees',
 ];
 
 const SearchBar = () => {
@@ -34,7 +36,6 @@ const SearchBar = () => {
                     onChange={e => setProvider(e.target.value)}
                 >
                     <option value=""></option>
-
                     {courierProviders.map(p => (
                         <option value={p} key={p}>
                             {p}
