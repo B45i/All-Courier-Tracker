@@ -11,6 +11,7 @@ const TrackingDetailsList = ({ data }) => {
                 {(data || []).map((detail, i) => (
                     <li className="courier-item" key={i}>
                         <div className="courier-detail-location">
+                            <i className="fas fa-map-marker-alt mr-1"></i>
                             {detail.location}
                         </div>
 
@@ -18,7 +19,7 @@ const TrackingDetailsList = ({ data }) => {
                             {detail.detail.toLowerCase()}
                         </div>
 
-                        <div>
+                        <div className="text-end">
                             <h4>
                                 {dayjs(detail.date).format(
                                     'ddd, D, MMM YYYY h:mm A'

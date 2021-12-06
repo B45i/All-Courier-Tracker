@@ -2,8 +2,20 @@
     margin-top: 1rem;
 }
 
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
 .title-case {
     text-transform: capitalize;
+}
+
+.text-end {
+    text-align: end;
 }
 
 .search {
@@ -132,5 +144,9 @@ button:disabled {
 
     .loading-animation {
         width: 80%;
+    }
+
+    .courier-items {
+        margin: 1rem 0.5rem;
     }
 }
