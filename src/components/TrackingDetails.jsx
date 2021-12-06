@@ -35,7 +35,13 @@ const TrackingDetails = ({ params }) => {
     };
 
     if (loading) {
-        return <img src={loadingAnimation} alt="logo" />;
+        return (
+            <img
+                className="loading-animation"
+                src={loadingAnimation}
+                alt="logo"
+            />
+        );
     }
 
     return (

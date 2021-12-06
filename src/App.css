@@ -94,6 +94,12 @@ button:disabled {
     align-items: center;
 }
 
+.loading-animation {
+    width: 40%;
+    margin: 5% auto;
+    display: block;
+}
+
 .courier-detail-location {
     flex-basis: 20%;
 }
@@ -122,5 +128,9 @@ button:disabled {
 
     .search-bar {
         min-width: 0;
+    }
+
+    .loading-animation {
+        width: 80%;
     }
 }
