@@ -18,7 +18,7 @@ const History = () => {
                     </div>
 
                     <div className="courier-item-status">
-                        <span>Deliverd</span>
+                        <span>Delivered</span>
                     </div>
                 </li>
             </ul>
