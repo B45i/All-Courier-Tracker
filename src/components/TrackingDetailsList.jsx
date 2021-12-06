@@ -1,3 +1,8 @@
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
+dayjs.extend(relativeTime);
+
 const TrackingDetailsList = ({ data }) => {
     return (
         <div className="courier-items">
@@ -14,8 +19,12 @@ const TrackingDetailsList = ({ data }) => {
                         </div>
 
                         <div>
-                            <h5>Robu.in</h5>
-                            <h3>Z63039258</h3>
+                            <h4>
+                                {dayjs(detail.date).format(
+                                    'ddd, D, MMM YYYY h:mm A'
+                                )}
+                            </h4>
+                            <h5> {dayjs(detail.date).fromNow()}</h5>
                         </div>
                     </li>
                 ))}
